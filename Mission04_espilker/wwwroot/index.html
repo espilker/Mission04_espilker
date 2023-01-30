@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mission 04</title>
+
+    <!--Links to the different css stylings and web page icon-->
+    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="img/Atium.png" />
+
+
+</head>
+<body>
+    <h1>Ethan Spilker</h1>
+    <img src="img/IMG_5501 (1).jpg" / width="250" height="300">
+
+    <p>
+        There are several things that I hope to get out of this class. The first thing I hope to get, is a good grade. I wouldn't mind an A or A-.
+        <br />Jokes aside I hope to learn valuable development skills that can land me good job.
+        <br />I hope to build a solid foundation of the C# and the .NET framework.
+        <br />Most of all, I hope to learn skills that will make me $$$ ;)
+    </p>
+    <br />
+    <br />
+    <ul>
+        Top 3 Jobs (I honestly haven't really thought aobut it yet)
+        <li>Something in Cybersecurity (pen-testing sounds fun)</li>
+        <li>Something in develpment (I like programming)</li>
+        <li>Full-Stack Devloper</li>
+    </ul>
+    <br />
+    <p>Below is a Grade Calculator for IS 413. Enter your grade (as a %) for each item</p>
+    <form>
+        <!--Form for gathering grade scores on each assignment-->
+        <label> Assignments: </label>
+        <input id="txtAssignment" /><br />
+        <label> Group Project: </label>
+        <input id="txtProject" /><br />
+        <label> Quiz: </label>
+        <input id="txtQuiz" /><br />
+        <label> Mitderm: </label>
+        <input id="txtMidterm" /><br />
+        <label> Final Exam: </label>
+        <input id="txtFinal" /><br />
+        <label> Intex: </label>
+        <input id="txtIntex" /><br />
+
+        <!--Button to call upon the grade calculator javascript file-->
+        <input id="btnFinal" type="button" value="Calculate Final Grade" />
+        <br />
+        <!--label where the results are printed-->
+        <label id="textFinalGradeLetter" value=""></label> <br />
+    </form>
+
+    <!--loading in the JavaScripts-->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="Bootstrap/js/bootstrap.js"></script>
+    <script src="js/GradeCalculator.js"></script>
+
+</body>
+</html>
+
+
