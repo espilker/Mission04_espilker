@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+
+    <!--Links to the different css stylings and web page icon-->
+    <link href="~/Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="img/Atium.png" />
+
+
+</head>
+<body>
+    @* Adding a Nav-bar to allow the user to travel between pages *@
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="Grade_Calc">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <!--loading in the JavaScripts-->
+    <script src="~/js/jquery-3.6.3.min.js"></script>
+    <script src="~/Bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/GradeCalculator.js"></script>
+</body>
+
+</html>

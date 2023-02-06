@@ -1,6 +1,5 @@
 ﻿$("#btnFinal").click(function () {
 
-
     // Assign values from html page into variables
     let iAssignment = parseFloat($("#txtAssignment").val());
     let iProject = parseFloat($("#txtProject").val());
@@ -38,9 +37,9 @@
         ltrFinal = "E"
     }
 
-    //assigns a label on the index page a string with the different calculated values
-    $("#textFinalGradeLetter").text("Grade: " + ltrFinal + "    " + PctFinalGrade + "%")
-
+    //Creates an alert to show the total grade
+    alert("Grade: " + ltrFinal + "    " + PctFinalGrade + "%");
+   
 });
 
 
