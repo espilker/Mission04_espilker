@@ -14,25 +14,27 @@
     let PctFinalGrade = iAssignment + iProject + iQuiz + iMidterm + iFinal + iIntex;
 
     //big if statement to determine what letter grade corresponds with the number grade
-    if (PctFinalGrade < 94) {
-        ltrFinal = "A-";
-    } else if (PctFinalGrade < 90) {
+    if (PctFinalGrade >= 94) {
+        ltrFinal = "A";
+    } else if (PctFinalGrade >= 90) {
+        ltrFinal = "A-"
+    } else if (PctFinalGrade >= 87) {
         ltrFinal = "B+"
-    } else if (PctFinalGrade < 87) {
+    } else if (PctFinalGrade >= 84) {
         ltrFinal = "B"
-    } else if (PctFinalGrade < 84) {
+    } else if (PctFinalGrade >= 80) {
         ltrFinal = "B-"
-    } else if (PctFinalGrade < 80) {
+    } else if (PctFinalGrade >= 77) {
         ltrFinal = "C+"
-    } else if (PctFinalGrade < 77) {
+    } else if (PctFinalGrade >= 74) {
         ltrFinal = "C"
-    } else if (PctFinalGrade < 74) {
+    } else if (PctFinalGrade >= 70) {
         ltrFinal = "C-"
-    } else if (PctFinalGrade < 70) {
+    } else if (PctFinalGrade >= 67) {
         ltrFinal = "D+"
-    } else if (PctFinalGrade < 67) {
+    } else if (PctFinalGrade >= 64) {
         ltrFinal = "D"
-    } else if (PctFinalGrade < 64) {
+    } else if (PctFinalGrade >= 60) {
         ltrFinal = "D-"
     } else if (PctFinalGrade < 60) {
         ltrFinal = "E"
